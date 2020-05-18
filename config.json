@@ -1,0 +1,70 @@
+{
+  "admin_email": "shit@example.ru",
+  "ads": {
+    "login": "ADSSYS",
+    "password": "",
+    "data_source": "\\\\srv-a10\\u$\\opdata\\dict.add"
+  },
+  "email_robot": {
+    "from": "robot@example.ru",
+    "from_name": "Почтовый голубь",
+    "host": "host",
+    "user": "robot@example.ru",
+    "password": "password",
+    "port": 25
+  },
+  "logs": "..\\Logs",
+  "excel_defaults": {
+    "name": "orders",
+    "excel_path": "..\\orders",
+    "date_row_col": [2,1],
+    "prod_row_col": [4,2,1],
+    "shop_row_col": [3,3,2],
+    "use_own_prod_code": true,
+    "use_own_shop_code": true,
+    "zero_as_rejects": true,
+    "client_code": null,
+    "need_second_route": false,
+    "need_split_orders": true,
+    "from_manager": true
+  },
+  "excel": [
+    {
+      "enabled": true,
+      "name": "TEST",
+      "excel_path": "..\\orders\\manager\\TEST",
+      "email": []
+    },
+    {
+      "enabled": true,
+      "name": "FERMER",
+      "excel_path": "..\\orders\\FERMER",
+      "email": [],
+      "date_row_col": [1,1],
+      "prod_row_col": [5,2,1],
+      "shop_row_col": [4,3,4],
+      "use_own_prod_code": true,
+      "use_own_shop_code": true,
+      "zero_as_rejects": false,
+      "need_second_route": true,
+      "need_split_orders": false,
+      "from_manager": false
+    },
+    {
+      "enabled": true,
+      "name": "TANDER",
+      "excel_path": "..\\orders\\TANDER",
+      "email": [],
+      "date_row_col": [1,1],
+      "prod_row_col": [4,3,1],
+      "shop_row_col": [2,4,1],
+      "use_own_prod_code": false,
+      "use_own_shop_code": false,
+      "zero_as_rejects": false,
+      "client_code": 7818,
+      "need_second_route": false,
+      "need_split_orders": false,
+      "from_manager": false
+    }
+  ]
+}
